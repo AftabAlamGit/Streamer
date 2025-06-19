@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Streamer\\RestreamerClient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\utilities\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\services\\streammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\services\\streammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\interfaces\\istreamermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\interfaces\\istreamermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\services\\ffmpegservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\services\\ffmpegservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\models\\streamsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\models\\streamsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|d:\\projects\\streamer\\restreamerclient\\restreamerclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96CFAE83-1B77-4D7F-800C-BC19B3A756E0}|RestreamerClient\\RestreamerClient.csproj|solutionrelative:restreamerclient\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{34c7837f-3b3a-449c-bdf0-bdad86cbaf4a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Common\\Constants.cs",
+              "RelativeDocumentMoniker": "RestreamerClient\\Common\\Constants.cs",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Common\\Constants.cs",
+              "RelativeToolTip": "RestreamerClient\\Common\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:48:15.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Utilities\\Logger.cs",
+              "RelativeDocumentMoniker": "RestreamerClient\\Utilities\\Logger.cs",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Utilities\\Logger.cs",
+              "RelativeToolTip": "RestreamerClient\\Utilities\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:47:15.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StreamManager.cs",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Services\\StreamManager.cs",
+              "RelativeDocumentMoniker": "RestreamerClient\\Services\\StreamManager.cs",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Services\\StreamManager.cs",
+              "RelativeToolTip": "RestreamerClient\\Services\\StreamManager.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:46:42.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FFmpegService.cs",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Services\\FFmpegService.cs",
+              "RelativeDocumentMoniker": "RestreamerClient\\Services\\FFmpegService.cs",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Services\\FFmpegService.cs",
+              "RelativeToolTip": "RestreamerClient\\Services\\FFmpegService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:46:16.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StreamSession.cs",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Models\\StreamSession.cs",
+              "RelativeDocumentMoniker": "RestreamerClient\\Models\\StreamSession.cs",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Models\\StreamSession.cs",
+              "RelativeToolTip": "RestreamerClient\\Models\\StreamSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:44:40.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStreamerManager.cs",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Interfaces\\IStreamerManager.cs",
+              "RelativeDocumentMoniker": "RestreamerClient\\Interfaces\\IStreamerManager.cs",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\Interfaces\\IStreamerManager.cs",
+              "RelativeToolTip": "RestreamerClient\\Interfaces\\IStreamerManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T14:42:54.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "RestreamerClient\\MainWindow.xaml",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\MainWindow.xaml",
+              "RelativeToolTip": "RestreamerClient\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-26T19:08:22.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RestreamerClient\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Projects\\Streamer\\RestreamerClient\\RestreamerClient\\MainWindow.xaml.cs",
+              "RelativeToolTip": "RestreamerClient\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T19:08:18.868Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

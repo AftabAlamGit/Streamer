@@ -1,0 +1,372 @@
+﻿<Window
+    x:Class="RestreamerClient.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:RestreamerClient" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow" Width="800"
+    Height="450" mc:Ignorable="d">
+    <Window.Resources>
+        <Style TargetType="TabItem">
+            <Setter Property="Background" Value="#FF1F2937" />
+            <Setter Property="Foreground" Value="#FFE5E7EB" />
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="BorderBrush" Value="#FF374151" />
+            <Setter Property="BorderThickness" Value="1,1,1,0" />
+            <Setter Property="Margin" Value="0,0,-1,0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border
+                    Name="Border"
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="4,4,0,0"
+                    Padding="{TemplateBinding Padding}">
+                            <ContentPresenter
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        ContentSource="Header"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#FF3B82F6"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#FF2563EB"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Foreground" Value="Gray"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TabControl">
+            <Setter Property="BorderBrush" Value="#FF374151" />
+            <Setter Property="BorderThickness" Value="0,1,0,0" />
+        </Style>
+        <Style x:Key="BaseButton" TargetType="Button">
+            <Setter Property="Padding" Value="10,8" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="MinWidth" Value="100" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect
+                        BlurRadius="5" Opacity="0.3"
+                        ShadowDepth="2" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style
+            x:Key="PrimaryButton"
+            BasedOn="{StaticResource BaseButton}"
+            TargetType="Button">
+            <Setter Property="Background" Value="#FF3B82F6" />
+        </Style>
+        <Style
+            x:Key="SecondaryButton"
+            BasedOn="{StaticResource BaseButton}"
+            TargetType="Button">
+            <Setter Property="Background" Value="#FF4B5563" />
+        </Style>
+        <Style
+            x:Key="DangerButton"
+            BasedOn="{StaticResource BaseButton}"
+            TargetType="Button">
+            <Setter Property="Background" Value="#FFEF4444" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#FFE5E7EB" />
+            <Setter Property="Margin" Value="0,0,0,5" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#FF374151" />
+            <Setter Property="Foreground" Value="#FFE5E7EB" />
+            <Setter Property="BorderBrush" Value="#FF4B5563" />
+            <Setter Property="Padding" Value="8" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CaretBrush" Value="#FFE5E7EB" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#FFD1D5DB" />
+        </Style>
+        <Style x:Key="CardBorder" TargetType="Border">
+            <Setter Property="Background" Value="#FF1F2937" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Padding" Value="15" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect
+                        BlurRadius="3" Opacity="0.2"
+                        ShadowDepth="1" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#FF0F172A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border
+            Grid.Row="0" Padding="10"
+            Background="#FF0F172A">
+            <TextBlock
+                HorizontalAlignment="Center" FontSize="24"
+                FontWeight="Bold" Foreground="#FF60A5FA"
+                Text="Universal Video Restreamer" />
+        </Border>
+
+        <Grid
+            Grid.Row="1" Margin="10"
+            Background="#FF0F172A">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <TextBlock
+                            Margin="0,0,0,10" FontSize="18"
+                            FontWeight="SemiBold" Text="Select Input Source" />
+                        <TabControl x:Name="InputTabControl" Background="#FF0F172A">
+                            <TabItem Header="File">
+                                <StackPanel Margin="10">
+                                    <TextBlock Text="Video File:" />
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBox
+                                            x:Name="FilePathTextBox" VerticalContentAlignment="Center"
+                                            IsReadOnly="True" />
+                                        <Button
+                                            x:Name="BrowseFileButton" Grid.Column="1"
+                                            Click="BrowseFileButton_Click" Content="Browse..."
+                                            Style="{StaticResource SecondaryButton}" />
+                                        <!--
+                                            C# Click Handler:
+                                            private void BrowseFileButton_Click(object sender, RoutedEventArgs e) {
+                                            OpenFileDialog openFileDialog = new OpenFileDialog();
+                                            openFileDialog.Filter = "Video Files|*.mp4;*.mov;*.avi;*.mkv|All files (*.*)|*.*";
+                                            if (openFileDialog.ShowDialog() == true) {
+                                            FilePathTextBox.Text = openFileDialog.FileName;
+                                            // Attempt to load into MediaElement for preview
+                                            VideoPreviewElement.Source = new Uri(openFileDialog.FileName);
+                                            VideoPreviewElement.Play();
+                                            }
+                                            }
+                                        -->
+                                    </Grid>
+                                    <TextBlock
+                                        FontSize="10" Foreground="Gray"
+                                        Text="Supported formats: MP4, MOV, AVI, MKV etc." />
+                                </StackPanel>
+                            </TabItem>
+
+                            <TabItem Header="URL">
+                                <StackPanel Margin="10">
+                                    <TextBlock Text="Video URL (RTSP, HTTP, etc.):" />
+                                    <TextBox x:Name="VideoUrlTextBox" TextChanged="VideoUrlTextBox_TextChanged" />
+                                    <!--
+                                        C# TextChanged Handler:
+                                        private void VideoUrlTextBox_TextChanged(object sender, TextChangedEventArgs e) {
+                                        string url = VideoUrlTextBox.Text;
+                                        if (Uri.TryCreate(url, UriKind.Absolute, out Uri uriResult)) {
+                                        if (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps) {
+                                        // For HTTP/S, MediaElement might work for direct video files
+                                        // VideoPreviewElement.Source = uriResult;
+                                        // VideoPreviewElement.Play();
+                                        // Note: RTSP is not directly supported by MediaElement.
+                                        // You'd need a library like LibVLCSharp or FFmpeg.
+                                        StatusTextBlock.Text = "HTTP/S URL entered. Preview may work for direct video files.";
+                                        } else if (uriResult.Scheme.ToLower() == "rtsp") {
+                                        StatusTextBlock.Text = "RTSP URL entered. Preview requires external libraries.";
+                                        VideoPreviewElement.Source = null; // Clear preview
+                                        }
+                                        }
+                                        }
+                                    -->
+                                </StackPanel>
+                            </TabItem>
+
+                            <TabItem Header="Webcam">
+                                <StackPanel Margin="10">
+                                    <TextBlock Text="Use your webcam as the source." />
+                                    <Button
+                                        x:Name="StartWebcamButton" Click="StartWebcamButton_Click"
+                                        Content="Start Webcam"
+                                        Style="{StaticResource SecondaryButton}" />
+                                    <Button
+                                        x:Name="StopWebcamButton" Click="StopWebcamButton_Click"
+                                        Content="Stop Webcam"
+                                        Style="{StaticResource DangerButton}"
+                                        Visibility="Collapsed" />
+                                    <TextBlock x:Name="WebcamStatusTextBlock" Foreground="OrangeRed" />
+                                    <!--
+                                        C# Click Handlers:
+                                        // Webcam access in WPF for capture is non-trivial and often requires
+                                        // libraries like AForge.NET, OpenCvSharp, or direct interaction with DirectShow/MediaFoundation.
+                                        // MediaElement can play from a capture device but setting it up for restreaming is more involved.
+                                        private void StartWebcamButton_Click(object sender, RoutedEventArgs e) {
+                                        // Placeholder for complex webcam start logic
+                                        WebcamStatusTextBlock.Text = "Webcam functionality requires specific implementation.";
+                                        // Example (conceptual, might not work directly for capture stream):
+                                        // VideoPreviewElement.Source = new Uri("capture://video"); // This syntax is illustrative
+                                        // VideoPreviewElement.Play();
+                                        StartWebcamButton.Visibility = Visibility.Collapsed;
+                                        StopWebcamButton.Visibility = Visibility.Visible;
+                                        }
+                                        private void StopWebcamButton_Click(object sender, RoutedEventArgs e) {
+                                        // Placeholder for webcam stop logic
+                                        VideoPreviewElement.Source = null;
+                                        VideoPreviewElement.Stop();
+                                        StartWebcamButton.Visibility = Visibility.Visible;
+                                        StopWebcamButton.Visibility = Visibility.Collapsed;
+                                        WebcamStatusTextBlock.Text = "";
+                                        }
+                                    -->
+                                </StackPanel>
+                            </TabItem>
+                        </TabControl>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <TextBlock
+                            Margin="0,0,0,10" FontSize="18"
+                            FontWeight="SemiBold" Text="Stream Controls" />
+                        <Button
+                            x:Name="StartStreamButton" Click="StartStreamButton_Click"
+                            Content="Start Stream"
+                            Style="{StaticResource PrimaryButton}" />
+                        <Button
+                            x:Name="StopStreamButton" Click="StopStreamButton_Click"
+                            Content="Stop Stream"
+                            Style="{StaticResource DangerButton}"
+                            Visibility="Collapsed" />
+                        <TextBlock Margin="0,10,0,0">
+                            Status:<Run
+                                x:Name="StreamStatusRun" FontWeight="SemiBold"
+                                Text="Idle" /></TextBlock>
+                        <!--
+                            C# Click Handlers:
+                            private bool isStreaming = false;
+                            private void StartStreamButton_Click(object sender, RoutedEventArgs e) {
+                            // Actual streaming logic would go here (e.g., using FFmpeg process, a streaming library)
+                            isStreaming = true;
+                            StreamStatusRun.Text = "Streaming...";
+                            StartStreamButton.Visibility = Visibility.Collapsed;
+                            StopStreamButton.Visibility = Visibility.Visible;
+                            RestreamUrlTextBox.Text = "rtmp://your-server.com/live/streamkey"; // Example
+                            CopyUrlButton.IsEnabled = true;
+                            // Disable input controls
+                            InputTabControl.IsEnabled = false;
+                            }
+                            private void StopStreamButton_Click(object sender, RoutedEventArgs e) {
+                            isStreaming = false;
+                            StreamStatusRun.Text = "Idle";
+                            StartStreamButton.Visibility = Visibility.Visible;
+                            StopStreamButton.Visibility = Visibility.Collapsed;
+                            RestreamUrlTextBox.Text = "Not streaming yet...";
+                            CopyUrlButton.IsEnabled = false;
+                            // Re-enable input controls
+                            InputTabControl.IsEnabled = true;
+                            }
+                        -->
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <TextBlock
+                            Margin="0,0,0,10" FontSize="18"
+                            FontWeight="SemiBold" Text="Video Preview" />
+                        <Border
+                            Height="300" Background="Black"
+                            BorderBrush="#FF374151" BorderThickness="1"
+                            CornerRadius="3">
+                            <MediaElement
+                                x:Name="VideoPreviewElement" LoadedBehavior="Manual"
+                                MediaEnded="VideoPreviewElement_MediaEnded" MediaFailed="VideoPreviewElement_MediaFailed"
+                                MediaOpened="VideoPreviewElement_MediaOpened" Stretch="Uniform"
+                                UnloadedBehavior="Stop" />
+                            <!--
+                                C# Event Handlers for MediaElement:
+                                private void VideoPreviewElement_MediaFailed(object sender, ExceptionRoutedEventArgs e) {
+                                StatusTextBlock.Text = $"Media failed: {e.ErrorException.Message}";
+                                }
+                                private void VideoPreviewElement_MediaOpened(object sender, RoutedEventArgs e) {
+                                StatusTextBlock.Text = "Media opened. Playing...";
+                                }
+                                private void VideoPreviewElement_MediaEnded(object sender, RoutedEventArgs e) {
+                                StatusTextBlock.Text = "Media ended.";
+                                }
+                            -->
+                        </Border>
+                        <TextBlock
+                            x:Name="StatusTextBlock" Margin="0,5,0,0"
+                            Foreground="LightSkyBlue" />
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource CardBorder}">
+                    <StackPanel>
+                        <TextBlock
+                            Margin="0,0,0,10" FontSize="18"
+                            FontWeight="SemiBold" Text="Restream Output" />
+                        <TextBlock Text="Share this URL with your viewers:" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBox
+                                x:Name="RestreamUrlTextBox" VerticalContentAlignment="Center"
+                                IsReadOnly="True" Text="Not streaming yet..." />
+                            <Button
+                                x:Name="CopyUrlButton" Grid.Column="1"
+                                Click="CopyUrlButton_Click" Content="Copy"
+                                IsEnabled="False"
+                                Style="{StaticResource SecondaryButton}" />
+                            <!--
+                                C# Click Handler:
+                                private void CopyUrlButton_Click(object sender, RoutedEventArgs e) {
+                                if (!string.IsNullOrEmpty(RestreamUrlTextBox.Text) && RestreamUrlTextBox.Text != "Not streaming yet...") {
+                                Clipboard.SetText(RestreamUrlTextBox.Text);
+                                StatusTextBlock.Text = "Restream URL copied to clipboard!";
+                                }
+                                }
+                            -->
+                        </Grid>
+                        <TextBlock Margin="0,10,0,0">
+                            Connected Viewers:<Run
+                                x:Name="ViewerCountRun" FontWeight="SemiBold"
+                                Text="0" /></TextBlock>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <Border
+            Grid.Row="2" Padding="8"
+            Background="#FF0F172A">
+            <TextBlock
+                HorizontalAlignment="Center" FontSize="10"
+                Foreground="Gray" Text="© Universal Video Restreamer (WPF Edition)" />
+        </Border>
+    </Grid>
+</Window>
